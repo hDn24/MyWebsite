@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="616da213-9440-4c7f-a32e-e25adf45d1dd" name="Default Changelist" comment="" />
+    <list default="true" id="616da213-9440-4c7f-a32e-e25adf45d1dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +21,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1ZILdIL1WIVAkBR89XdlLkAyMaj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -101,6 +114,7 @@
       <workItem from="1586438986193" duration="2830000" />
       <workItem from="1586442300866" duration="854000" />
       <workItem from="1586496572811" duration="3819000" />
+      <workItem from="1586673824357" duration="2069000" />
     </task>
     <servers />
   </component>
