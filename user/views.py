@@ -14,6 +14,7 @@ from django.core.mail import send_mail
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
 class Register(View):
     def get(self, request):
         return render(request, "user/register.html", {"form": forms.RegisterForm()})

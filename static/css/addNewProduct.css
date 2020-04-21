@@ -22,37 +22,37 @@
 .panel-default .list-group-item.active
 {
     color: #000;
-    background-color: #DDD;
+    background-color: aquamarine;
     border-color: #DDD;
 }
 .panel-primary .list-group-item.active
 {
     color: #FFF;
-    background-color: #428BCA;
+    background-color: aquamarine;
     border-color: #428BCA;
 }
 .panel-success .list-group-item.active
 {
     color: #3C763D;
-    background-color: #DFF0D8;
+    background-color: aquamarine;
     border-color: #D6E9C6;
 }
 .panel-info .list-group-item.active
 {
     color: #31708F;
-    background-color: #D9EDF7;
+    background-color: aquamarine;
     border-color: #BCE8F1;
 }
 .panel-warning .list-group-item.active
 {
     color: #8A6D3B;
-    background-color: #FCF8E3;
+    background-color: aquamarine;
     border-color: #FAEBCC;
 }
 .panel-danger .list-group-item.active
 {
     color: #A94442;
-    background-color: #F2DEDE;
+    background-color: aquamarine;
     border-color: #EBCCD1;
 }
 .panel a.list-group-item.active:hover, a.list-group-item.active:focus

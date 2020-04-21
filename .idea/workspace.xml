@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="616da213-9440-4c7f-a32e-e25adf45d1dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HuyTuongShop/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuyTuongShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HuyTuongShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/addNewProduct.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/addNewProduct.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/products/addNewProduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/addNewProduct.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZILdIL1WIVAkBR89XdlLkAyMaj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -48,13 +59,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\HuyTuongShop" />
       <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\templates\user" />
       <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\templates\base" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\js" />
-      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\img" />
       <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\css" />
+      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -64,6 +76,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="HuyTuongShop.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -115,6 +128,12 @@
       <workItem from="1586442300866" duration="854000" />
       <workItem from="1586496572811" duration="3819000" />
       <workItem from="1586673824357" duration="2069000" />
+      <workItem from="1586695198673" duration="3167000" />
+      <workItem from="1586753947114" duration="4180000" />
+      <workItem from="1586764080006" duration="30000" />
+      <workItem from="1586867441831" duration="3450000" />
+      <workItem from="1587444462561" duration="35000" />
+      <workItem from="1587449252691" duration="2982000" />
     </task>
     <servers />
   </component>
@@ -122,10 +141,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="569" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585024824834">
+    <state x="569" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586754209100">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="569" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1585024824834" />
+    <state x="569" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1586754209100" />
     <state x="530" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585034935761">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -134,14 +153,30 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="580" y="207" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1584554069628" />
+    <state width="1556" height="231" key="GridCell.Tab.0.bottom" timestamp="1586698418468">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1556" height="231" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1586698418468" />
+    <state width="1556" height="231" key="GridCell.Tab.0.center" timestamp="1586698418468">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1556" height="231" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1586698418468" />
+    <state width="1556" height="231" key="GridCell.Tab.0.left" timestamp="1586698418468">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1556" height="231" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1586698418468" />
+    <state width="1556" height="231" key="GridCell.Tab.0.right" timestamp="1586698418468">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1556" height="231" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1586698418468" />
     <state x="346" y="71" key="SettingsEditor" timestamp="1585042279672">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="346" y="71" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1585042279672" />
-    <state x="507" y="276" key="com.intellij.ide.util.TipDialog" timestamp="1586673847480">
+    <state x="507" y="276" key="com.intellij.ide.util.TipDialog" timestamp="1587449270306">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="507" y="276" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1586673847480" />
+    <state x="507" y="276" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1587449270306" />
     <state x="463" y="190" key="search.everywhere.popup" timestamp="1585151356719">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

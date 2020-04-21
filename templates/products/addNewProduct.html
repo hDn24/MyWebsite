@@ -1,11 +1,12 @@
 {% extends "base/base.html" %}
 {% load static %}
 {% block title %}
-    Chỉnh sửa thông tin
+    Thêm sản phẩm mới
 {% endblock %}
 {% block css %}
     <link rel="stylesheet" href="{% static "css/profile.css" %}">
     <link rel="stylesheet" href="{% static "css/addNewProduct.css" %}">
+    <link rel="stylesheet" href="{% static "css/knockout-file-bindings.css" %}">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 {% endblock %}
@@ -66,16 +67,40 @@
                                 </div>
                             </div> <!-- form-group // -->
                             <div class="form-group">
-                                <label for="name" class="col-sm-3 control-label">Đính kèm ảnh</label>
-                                <div class="col-sm-3">
+                                <label for="name" class="col-sm-3 control-label">Ảnh nổi bật</label>
+                                <div class="col-sm-6">
                                     <label class="control-label small" for="file_img">Ảnh nổi bật (jpg/png):</label>
                                     <input type="file" name="file_img">
                                 </div>
-                                <div class="col-sm-3">
-                                    <label class="control-label small" for="file_img">Ảnh sản phẩm (jpg/png):</label>
-                                    <input type="file" name="file_archive" multiple>
+                            </div> <!-- form-group // -->
+
+                            <div class="form-group">
+                                <label for="name" class="col-sm-3 control-label">Ảnh đính kèm</label>
+                                <div class="col-sm-9">
+                                    <div class="well" data-bind="fileDrag: multiFileData">
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <!-- ko foreach: {data: multiFileData().dataURLArray, as: 'dataURL'} -->
+                                                <img style="height: 100px; margin: 5px;" class="img-rounded  thumb"
+                                                     data-bind="attr: { src: dataURL }, visible: dataURL">
+                                                <!-- /ko -->
+                                                <div data-bind="ifnot: fileData().dataURL">
+                                                    <label class="drag-label">Drag files here</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="file" multiple data-bind="fileInput: multiFileData, customFileInput: {
+	                                            buttonClass: 'btn btn-success',
+	                                            fileNameClass: 'disabled form-control',
+	                                            onClear: onClear,
+	                                            onInvalidFileDrop: onInvalidFileDrop
+	                                            }" accept="image/*">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div> <!-- form-group // -->
+
                             <div class="form-group">
                                 <label for="tech" class="col-sm-3 control-label">Loại sản phẩm</label>
                                 <div class="col-sm-6">
@@ -85,18 +110,15 @@
                                                 Chọn loại sản phẩm</h3>
                                         </div>
                                         <ul class="list-group list-category">
-                                            <label for="sua" class="list-group-item">
-                                                jhghghjj
-                                                <input class="d-none" id="sua" style="opacity: 1" type="checkbox"
-                                                       onchange="activeCategory(this)">
-                                            </label>
-
-                                            <label for="sua2" class="list-group-item">
-                                                jhghghjj
-                                                <input class="d-none" id="sua2" style="opacity: 1" type="checkbox"
-                                                       onchange="activeCategory(this)">
-                                            </label>
-
+                                            {% for item in category %}
+                                                <label for="{{ item.name_category }}" class="list-group-item">
+                                                    {{ item.name_category }}
+                                                    <input class="d-none checkbox-category" id="{{ item.name_category }}"
+                                                           style="opacity: 1" type="checkbox"
+                                                           onchange="activeCategory(this)"
+                                                           name="{{ item.id }}" checked>
+                                                </label>
+                                            {% endfor %}
                                         </ul>
                                     </div>
                                 </div>
@@ -116,9 +138,13 @@
     </div>
 {% endblock %}
 {% block js %}
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'></script>
+    <script src='{% static "js/knockout-file-bindings.js" %}'></script>
+    <script src='{% static "js/handleUploadImage.js" %}'></script>
     <script>
-        function activeCategory(event){
-            if (event.checked){
+         $('.checkbox-category').prop('checked', false);
+        function activeCategory(event) {
+            if (event.checked) {
                 event.parentElement.className = "list-group-item active"
             } else {
                 event.parentElement.className = "list-group-item"
