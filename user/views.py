@@ -8,6 +8,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 import random
 from . import forms
 from .models import MyUser
+from products.models import *
 from django.utils import timezone
 from django.core.mail import send_mail
 # Create your views here.
@@ -208,6 +209,14 @@ class SendVerifyEmail(LoginRequiredMixin, View):
                        " Lưu ý rằng email xác thực chỉ có hiệu lực trong 5 phút",
         }
         return render(request, "user/verifyEmail.html", context)
+
+
+class MyShop(LoginRequiredMixin, View):
+    login_url = "user/login"
+
+    def get(self, request):
+        products = Products.objects.filter(created_by=request.user)
+        return render(request, "my-shop/my-shop-home.html", {"products": products})
 
 
 

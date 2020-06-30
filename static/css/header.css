@@ -3,6 +3,7 @@ header{
     background-color: linear-gradient(-180deg, #00b894, #55efc4);
     color: #FFF !important;
     padding-top: 5px;
+    margin-bottom: 10px;
 }
 .header-top{
     height: 34px;

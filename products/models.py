@@ -8,7 +8,7 @@ from django.utils.timezone import now
 class Category(models.Model):
     slug_category = models.SlugField(unique=True)
     name_category = models.CharField(max_length=500, unique=True)
-    image_category = models.ImageField(default="")
+    image_category = models.ImageField(default="no-img.png", null=True, upload_to="category-pictures/")
 
     def save(self, *args, **kwargs):
         self.slug_category = slugify(self.name_category)
@@ -25,7 +25,7 @@ class Products(models.Model):
     created_by = models.ForeignKey(MyUser, on_delete=models.CASCADE, related_name="Who_created")
     describe = models.CharField(max_length=500, null=True, blank=True)
     content = models.TextField(null=True, blank=True)
-    main_picture = models.ImageField(default="")
+    main_picture = models.ImageField(default="no-img.png", null=True, upload_to="main-product-pictures/")
     category = models.ManyToManyField(Category, related_name="CategoryOfProduct")
     price = models.IntegerField(default=0)
     discount = models.FloatField(default=0)
@@ -41,8 +41,7 @@ class Products(models.Model):
 
 
 class ProductPictures(models.Model):
-    image_product = models.ImageField()
-    product = models.ForeignKey(Products,on_delete=models.CASCADE, related_name="PictureOfProduct")
+    image_product = models.ImageField(upload_to="product-pictures/")
+    product = models.ForeignKey(Products, on_delete=models.CASCADE, related_name="PictureOfProduct")
 
-    def __str__(self):
-        return self.product
+

@@ -30,3 +30,24 @@ body{
 .d-none{
     display: none !important;
 }
+.bg-white{
+    background-color: #fff;
+}
+.modal-backdrop{
+    z-index: 0 !important;
+}
+.float-right{
+    float: right;
+}
+.discount{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    z-index: 100;
+}
+.p-20{
+    padding: 20px;
+}
+.mgb-20{
+    margin-bottom: 20px;
+}

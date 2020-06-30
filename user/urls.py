@@ -9,4 +9,5 @@ urlpatterns = [
     path("profile/updateavatar/", views.UpdateAvatar.as_view(), name="update_avatar"),
     path("verifyemail/<str:id>", views.VerifyEmail.as_view(), name="verify_email"),
     path("sendemail/", views.SendVerifyEmail.as_view(), name="send_email"),
+    path("profile/shop/", views.MyShop.as_view(), name="my shop"),
 ]

@@ -22,7 +22,7 @@
 <body>
 <!--Header-->
 <header>
-    <div class="container_">
+    <div class="container">
         <div class="header-top">
             <div class="header-top-left">
                 <a href="#">Kênh người bán</a>
@@ -71,7 +71,9 @@
                 </div>
             </div>
             <div class="cart">
-                <span><i class="fas fa-shopping-cart"></i></span>
+                <a href="/order/my-order">
+                    <span><i class="fas fa-shopping-cart"></i></span>
+                </a>
             </div>
         </div>
     </div>
@@ -125,7 +127,7 @@
                 type: "POST",
                 url: '/user/login/',
                 data: $('#formLogin').serialize(),
-                success: function (response) {
+                success: (response) => {
                     if (response["result"] != "OK") return
                     if (response["message"] != "OK"){
                         $("#errorLogin").text(response["message"])
@@ -141,6 +143,7 @@
 {% endblock %}
 <script type="text/javascript"
             src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.14.1/js/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 {% block js %}
 {% endblock %}
 </body>

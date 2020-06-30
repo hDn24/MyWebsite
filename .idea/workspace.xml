@@ -2,15 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="616da213-9440-4c7f-a32e-e25adf45d1dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuyTuongShop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/HuyTuongShop/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuyTuongShop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HuyTuongShop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/67828542_1807115852767143_3881499938399453184_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/91239874_209330676996832_8692032875228299264_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/HVH_7219.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/HVH_7341.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/anh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/avatar/DSC_2932.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/em.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/category.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/asideprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/asideprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/products/addNewProduct.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/addNewProduct.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/updateprofile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/updateprofile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -18,9 +59,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
         <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -47,20 +89,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\media" />
+      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\js" />
+      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\css" />
+      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\HuyTuongShop" />
       <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\templates\user" />
       <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\templates\base" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\js" />
-      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\css" />
-      <recent name="C:\Users\̉̉̉̉̉̉ku\pycharmprojects\HuyTuongShop\static\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -130,7 +173,51 @@
       <workItem from="1587449252691" duration="3280000" />
       <workItem from="1587522731494" duration="97000" />
       <workItem from="1587562131565" duration="2329000" />
-      <workItem from="1587568304929" duration="4685000" />
+      <workItem from="1587568304929" duration="4845000" />
+      <workItem from="1587619211244" duration="610000" />
+      <workItem from="1587646468066" duration="13000" />
+      <workItem from="1587656533885" duration="637000" />
+      <workItem from="1587818470881" duration="3995000" />
+      <workItem from="1587907721400" duration="150000" />
+      <workItem from="1588691083912" duration="318000" />
+      <workItem from="1588734273811" duration="3195000" />
+      <workItem from="1588744957562" duration="2090000" />
+      <workItem from="1588784155878" duration="2900000" />
+      <workItem from="1588832388946" duration="6487000" />
+      <workItem from="1589247971530" duration="989000" />
+      <workItem from="1589249311969" duration="3687000" />
+      <workItem from="1589387170499" duration="956000" />
+      <workItem from="1589425348551" duration="4401000" />
+      <workItem from="1589594219229" duration="5536000" />
+      <workItem from="1589684760220" duration="2810000" />
+      <workItem from="1589691046303" duration="6664000" />
+      <workItem from="1589711049408" duration="3365000" />
+      <workItem from="1589851395815" duration="897000" />
+      <workItem from="1589859536923" duration="1517000" />
+      <workItem from="1589871776964" duration="6770000" />
+      <workItem from="1589898569761" duration="1261000" />
+      <workItem from="1589900550558" duration="27000" />
+      <workItem from="1590424557146" duration="1038000" />
+      <workItem from="1590475279799" duration="5788000" />
+      <workItem from="1590502368789" duration="620000" />
+      <workItem from="1590510222219" duration="1073000" />
+      <workItem from="1590549473423" duration="6313000" />
+      <workItem from="1591064520470" duration="1450000" />
+      <workItem from="1591113202516" duration="1210000" />
+      <workItem from="1591150153166" duration="3769000" />
+      <workItem from="1591166741990" duration="2458000" />
+      <workItem from="1591200449039" duration="1780000" />
+      <workItem from="1591232176037" duration="4804000" />
+      <workItem from="1591280501703" duration="66000" />
+      <workItem from="1591317598447" duration="2409000" />
+      <workItem from="1591407138861" duration="220000" />
+      <workItem from="1591540019859" duration="2650000" />
+      <workItem from="1591600793407" duration="6570000" />
+      <workItem from="1591673520856" duration="316000" />
+      <workItem from="1591719030617" duration="524000" />
+      <workItem from="1591844493884" duration="5000000" />
+      <workItem from="1592534052065" duration="2886000" />
+      <workItem from="1593442695478" duration="2677000" />
     </task>
     <servers />
   </component>
@@ -138,18 +225,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="569" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586754209100">
+    <state x="569" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593443151273">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="569" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1586754209100" />
+    <state x="569" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.900@0.0.1600.900" timestamp="1593443151273" />
     <state x="530" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585034935761">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="530" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1585034935761" />
-    <state x="580" y="207" key="FileChooserDialogImpl" timestamp="1584554069628">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="580" y="207" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1584554069628" />
     <state width="1556" height="231" key="GridCell.Tab.0.bottom" timestamp="1586698418468">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -170,22 +253,26 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="346" y="71" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1585042279672" />
-    <state x="507" y="276" key="com.intellij.ide.util.TipDialog" timestamp="1587522841977">
+    <state x="507" y="276" key="com.intellij.ide.util.TipDialog" timestamp="1589425501207">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="507" y="276" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1587522841977" />
-    <state x="463" y="190" key="search.everywhere.popup" timestamp="1585151356719">
+    <state x="507" y="276" key="com.intellij.ide.util.TipDialog/0.0.1600.900@0.0.1600.900" timestamp="1589425501207" />
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1591319318483">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="463" y="190" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1585151356719" />
+    <state x="463" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1591319318483" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/products/views.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="django-line">
-          <url>file://$PROJECT_DIR$/templates/products/addNewProduct.html</url>
-          <line>117</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/templates/home.html</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
