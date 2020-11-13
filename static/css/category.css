@@ -17,7 +17,6 @@
     margin: 0px;
     color: rgba(0,0,0,.54);
 }
-
 .list-portfolio > div > a > img{
     display: block;
     margin: auto;
@@ -26,7 +25,6 @@
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 .wrapper-img-type{
     position: relative;
     width: 100%;

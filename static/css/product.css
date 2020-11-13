@@ -20,7 +20,7 @@
     height: 100%;
     position: relative;
 }
-.product-img, .product-price, .product-sold, .product-title{
+.product-img, .product-price, .product-sold, .product-title, .product_discount{
     position: absolute;
 }
 .product-price{
@@ -48,7 +48,24 @@
     top: 0px;
     height: 70%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+}
+.product_discount {
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    right: 0px;
+    width: 30%;
+    height: 20%;
+    background-color: yellow;
+    z-index: 120;
+    text-align: center;
+    align-items: center;
+  }
+
+.discount_detail {
+    text-align: center;
+    font-weight: 600;
 }
 .item-product{
     margin-bottom: 10px;
