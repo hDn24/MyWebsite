@@ -13,7 +13,7 @@
 {% block body %}
     <section class="panel container">
         <div class="panel-body">
-            <div class="col-md-5 col-sm-12">
+            <div class="col-md-6">
                 <div class="pro-img-details">
                     <img class="main-img" id="main-img" src="/media/{{ product.main_picture }}" alt="">
                 </div>
@@ -25,40 +25,38 @@
                     {% endfor %}
                 </div>
             </div>
-            <div class="col-md-7 col-sm-12 ">
-                <div class="product_meta">
-                    <h4 class="pro-d-title">
+            <div class="col-md-6">
+                <h4 class="pro-d-title">
                     <a href="#" class="">
                         {{ product.name_product }}
                     </a>
                 </h4>
                 <p>
-                    : {{ product.describe }}
+                    {{ product.describe }}
                 </p>
-                </div>               
                 <div class="product_meta">
                         <span class="posted_in"> <strong>Danh mục:</strong>
                             {% for item in product.category.all %}
-                                <a rel="tag" href="/?category={{ item.slug_category }}">{{ item.name_category }}</a>
+                                <a rel="tag" href="/?category={{ item.slug_category }}">{{ item.name_category }}</a>,
                             {% endfor %}
                         </span>
                 </div>
-                <div class="m-bot15 product_meta">
+                <div class="m-bot15">
                     <strong>Giá tiền : </strong>
                     {% if product.discount != 0 %}
-                        <div class="amount-old">{{ product.price }}đ</div>
+                        <span class="amount-old">{{ product.price }}đ</span>
                     {% endif %}
-                    <div class="pro-price">{{ 100|sub:product.discount|mul:product.price|div:100|separator:'comma' }}đ</div>
+                    <span class="pro-price">{{ 100|sub:product.discount|mul:product.price|div:100|separator:'comma' }}đ</span>
                 </div>
 
-                <div class="form-group ">
-                    <form id="form-order " class="product_meta">
+                <div class="form-group">
+                    <form id="form-order">
                         {% csrf_token %}
                         <input type="hidden" name="id" value="{{ product.id }}">
                         <label>Số lượng mua:</label>
                         <input type="number" min="1" max="{{ product.num_available }}" step="1"
-                             placeholder="Tối đa {{ product.num_available }}" class="form-control quantity"
-                             name="number">          
+                               placeholder="Tối đa {{ product.num_available }}" class="form-control quantity"
+                               name="number">
                     </form>
 
                 </div>
