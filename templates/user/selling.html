@@ -44,8 +44,8 @@
                         </div>
                         <div class="col-md-2">
                             {% if item.mode == 1 %}
-                                <span>Đang chờ</span><br>
-                                <a class="accept text-success" data-id="{{ item.id }}">Đã gửi</a>
+                                <span>Đang chờ xác nhận</span><br>
+                                <a class="accept text-success" data-id="{{ item.id }}">Xác nhận đơn hàng</a>
                             {% elif item.mode == 2 %}
                                 <span class="text-success">Đã chấp nhận</span>
                             {% elif item.mode == 3 %}
